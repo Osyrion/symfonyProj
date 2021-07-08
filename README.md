@@ -10,17 +10,27 @@ User registration project
 
 ## Install:
 
-If need:\
-```composer require symfony/runtime```
+If need:
+```
+composer require symfony/runtime
+```
 
-Start your MySQL/MariaDB, and then run this in command line:\
-```php bin/console doctrine:database:create```
+Start your MySQL/MariaDB, and then run this in command line:
+```
+php bin/console doctrine:database:create
+```
 
-Database testDB is now created! Now, migrate table schema to testDB and create table:\
-```php bin/console doctrine:migrations:migrate```
+Database testDB is now created! Now, migrate table schema to testDB and create table:
+```
+php bin/console doctrine:migrations:migrate
+```
 
-Finally, start server with this command:\
-```symfony server:start --no-tls```
+Finally, start server with this command:
+```
+symfony server:start --no-tls
+```
 
-If All done, project is available on:\
-```http://localhost:8000/api/user```
+If All done, project is available on:
+```
+http://localhost:8000/api/user
+```
