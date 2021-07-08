@@ -10,11 +10,6 @@ User registration project
 
 ## Install:
 
-If need:
-```
-composer require symfony/runtime
-```
-
 Start your MySQL/MariaDB, and then run this in command line:
 ```
 php bin/console doctrine:database:create
