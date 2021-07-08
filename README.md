@@ -50,20 +50,10 @@ POST method
   "email": "examplebrno.cz"
   "name": "person",
   "password": "abcd1234"
+  "roles": "ROLE_USER"
 }
 ```
 
-or
+### Troubleshooting
 
-```
-{
-  "email": "examplebrno.cz"
-  "name": "person",
-  "password": "abcd1234"
-  "roles": [
-    "ROLE_USER"
-  ]
-}
-```
-
-NOTE: 'roles' not working properly at this time.
+If you have connection problems with database, check ```.env``` file and update your DB credentials
