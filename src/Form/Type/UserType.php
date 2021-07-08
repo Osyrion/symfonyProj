@@ -37,6 +37,7 @@ class UserType extends AbstractType
                 ]
             ])
             // todo: roles not working properly - array type - input error: /validation
+            /*
             ->add('roles', EntityType::class, [
                 'required' => false,
                 'multiple' => false,
@@ -46,6 +47,7 @@ class UserType extends AbstractType
                   'Admin' => 'ROLE_ADMIN',
                 ],
             ])
+            */
         ;
     }
 
