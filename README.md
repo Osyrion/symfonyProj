@@ -71,6 +71,8 @@ What is returned
 ]
 ```
 
+NOTE: In testDB are stored only 'id', 'email', 'name', 'password' and 'roles'
+
 ### Troubleshooting:
 
 If you have connection problems with database, check ```.env``` file and update your DB credentials
