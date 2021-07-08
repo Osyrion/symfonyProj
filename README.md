@@ -1,6 +1,6 @@
 User registration project
 =============
-(Windows)
+
 
 ## Requirements:
 - Composer
@@ -34,3 +34,36 @@ If All done, project is available on:
 ```
 http://localhost:8000/api/user
 ```
+
+### Example:
+
+GET method
+
+```
+http://localhost:8000/api/user/
+```
+
+POST method
+
+```
+{
+  "email": "examplebrno.cz"
+  "name": "person",
+  "password": "abcd1234"
+}
+```
+
+or
+
+```
+{
+  "email": "examplebrno.cz"
+  "name": "person",
+  "password": "abcd1234"
+  "roles": [
+    "ROLE_USER"
+  ]
+}
+```
+
+NOTE: 'roles' not working properly at this time.
