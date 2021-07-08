@@ -39,7 +39,7 @@ class UserType extends AbstractType
                     new NotNull(),
                 ]
             ])
-            /*
+            // todo: roles not working properly - array type - input error: /validation
             ->add('roles', ChoiceType::class, [
                 'required' => true,
                 'multiple' => false,
@@ -49,7 +49,6 @@ class UserType extends AbstractType
                   'Admin' => 'ROLE_ADMIN',
                 ],
             ])
-            */
         ;
     }
 
