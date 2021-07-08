@@ -13,9 +13,6 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotNull;
 
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\CallbackTransformer;
-
 class UserType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
@@ -40,7 +37,7 @@ class UserType extends AbstractType
                 ]
             ])
             // todo: roles not working properly - array type - input error: /validation
-            ->add('roles', ChoiceType::class, [
+            ->add('roles', EntityType::class, [
                 'required' => true,
                 'multiple' => false,
                 'expanded' => false,
