@@ -22,5 +22,5 @@ Database testDB is now created! Now, migrate table schema to testDB and create t
 Finally, start server with this command:\
 ```symfony server:start --no-tls```
 
-If All done, project is available on
+If All done, project is available on:\
 ```http://localhost:8000/api/user```
