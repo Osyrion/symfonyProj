@@ -47,7 +47,7 @@ POST method
 
 ```
 {
-  "email": "examplebrno.cz"
+  "email": "example@brno.cz"
   "name": "person",
   "password": "abcd1234"
   "roles": "ROLE_USER"
