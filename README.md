@@ -54,6 +54,6 @@ POST method
 }
 ```
 
-### Troubleshooting
+### Troubleshooting:
 
 If you have connection problems with database, check ```.env``` file and update your DB credentials
