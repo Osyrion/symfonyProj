@@ -37,21 +37,38 @@ http://localhost:8000/api/user
 
 ### Example:
 
-GET method
-
-```
-http://localhost:8000/api/user/
-```
 
 POST method
 
 ```
 {
-  "email": "example@brno.cz"
+  "email": "example@brno.cz",
   "name": "person",
-  "password": "abcd1234"
+  "password": "abcd1234",
   "roles": "ROLE_USER"
 }
+```
+
+GET method
+
+```
+http://localhost:8000/api/user/
+```
+What is returned
+
+```
+[
+    {
+        "id": 1,
+        "email": "example@brno.cz",
+        "userIdentifier": "example@brno.cz",
+        "username": "example@brno.cz",
+        "roles": "ROLE_USER",
+        "password": "$2y$13$PZgVIVpCF6RNdS8hLmz.auhDpWoTlOSh3QviYfPhFviMAoZKHI8A6",
+        "salt": null,
+        "name": "person"
+    }
+]
 ```
 
 ### Troubleshooting:
